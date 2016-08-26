@@ -1,11 +1,11 @@
 import { createStore } from 'redux';
-import pokemonReducer from '../reducers/pokemon_reducer';
-import masterMiddleware from '../middleware/master_middleware';
+import PokemonReducer from '../reducers/pokemon_reducer';
+import MasterMiddleware from '../middleware/master_middleware';
 
 const configureStore = () => (
   createStore(
-    pokemonReducer,
-    masterMiddleware
+    PokemonReducer,
+    MasterMiddleware
   )
 );
 

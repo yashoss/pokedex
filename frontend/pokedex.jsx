@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.fetchAllPokemon = API.fetchAllPokemon;
   window.receiveAllPokemon = API.receiveAllPokemon;
   window.store = store;
-  API.fetchAllPokemon((pokemon) => store.dispatch(ACTIONS.receiveAllPokemon(pokemon)));
+
   ReactDOM.render(
     <div>
       <h1>Pokedex Rendering</h1>
